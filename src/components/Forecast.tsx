@@ -9,7 +9,7 @@ const fetcher = (url: string) => fetch(url).then(res => res.json());
 
 const Forecast = ({ city }: Props) => {
   const { data, error } = useSWR<Forecast>(
-    `http://api.weatherapi.com/v1/forecast.json?key=c632a86b19514565af1104101232505&q=${city.name}&days=3&aqi=no&alerts=no&lang=ru`,
+    `http://api.weatherapi.com/v1/forecast.json?key=${process.env.WEATHER_API}&q=${city.name}&days=3&aqi=no&alerts=no&lang=ru`,
     fetcher
   );
 
