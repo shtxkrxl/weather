@@ -13,7 +13,7 @@ const Search = ({ setCity }: Props) => {
   const debounced = useDebounce(input);
   const { data, error } = useSWR<City[]>(
     debounced.length >= 3
-      ? `http://api.weatherapi.com/v1/search.json?key=${process.env.WEATHER_API}&q=${debounced}`
+      ? `http://api.weatherapi.com/v1/search.json?key=${process.env.NEXT_PUBLIC_WEATHER_API}&q=${debounced}`
       : null,
     fetcher
   );
