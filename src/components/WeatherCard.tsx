@@ -13,7 +13,7 @@ const fetcher = (url: string) => fetch(url).then(res => res.json());
 
 const WeatherCard = ({ city }: Props) => {
   const { data, error } = useSWR<CurrentWeather>(
-    `http://api.weatherapi.com/v1/current.json?key=${process.env.NEXT_PUBLIC_WEATHER_API}&q=${city.name}&aqi=no&lang=ru`,
+    `https://api.weatherapi.com/v1/current.json?key=${process.env.NEXT_PUBLIC_WEATHER_API}&q=${city.name}&aqi=no&lang=ru`,
     fetcher
   );
 
