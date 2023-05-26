@@ -15,6 +15,12 @@ export default function Home() {
     name: 'Москва',
   });
 
+  navigator.geolocation.getCurrentPosition(position => {
+    setCity({
+      name: `${position.coords.latitude},${position.coords.longitude}`,
+    });
+  });
+
   return (
     <main className={`${inter.className} text-[#303030]`}>
       <Head>
