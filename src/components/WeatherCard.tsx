@@ -27,7 +27,9 @@ const WeatherCard = ({ city }: Props) => {
         p-[15px] shadow-[0_6px_10px_rgba(0,0,0,0.25)] transition-all hover:shadow-[0_10px_10px_rgba(0,0,0,0.25)]'>
         <div className='flex justify-between'>
           <span className='text-[20px] leading-[24px]'>{`${today.weekday}, ${today.day} ${today.month}`}</span>
-          <span className='text-[20px] leading-[24px]'>{city.name}</span>
+          <span className='text-[20px] leading-[24px]'>
+            {data.location.name}
+          </span>
         </div>
 
         <div className='flex items-center justify-center gap-[25px]'>
