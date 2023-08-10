@@ -1,38 +1,111 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<!-- PROJECT SHIELDS -->
+<!--
+*** I'm using markdown "reference style" links for readability.
+*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
+*** See the bottom of this document for the declaration of the reference variables
+*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
+*** https://www.markdownguide.org/basic-syntax/#reference-style-links
+-->
+[![commits][commits-shield]][commits-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
 
-## Getting Started
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="https://github.com/shtxkrxl/weather">
+    <img src="public/icon.svg" alt="Logo" width="80" height="80">
+  </a>
 
-First, run the development server:
+<h3 align="center">Movie</h3>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+  <p align="center">
+    Веб-сайт предоставляющий информацию о текущей погоде и прогнозе на несколько дней для различных городов
+    <br />
+    <a href="https://weather-shtxkrxl.vercel.app/">Сайт</a>
+    ·
+    <a href="https://github.com/shtxkrxl/weather/issues">Сообщить об ошибке</a>
+  </p>
+</div>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Содержание</summary>
+  <ol>
+    <li>
+      <a href="#о-проекте">О проекте</a>
+    </li>
+    <li>
+      <a href="#запуск-локально">Запуск локально</a>
+    </li>
+    <li><a href="#лицензия">Лицензия</a></li>
+    <li><a href="#контакты">Контакты</a></li>
+  </ol>
+</details>
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+<!-- ABOUT THE PROJECT -->
+## О проекте
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+![image](https://github.com/shtxkrxl/weather/assets/68380962/e1552a2f-69cb-42fd-88dc-9ff46b865870)
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Проект Weather - это веб-сайт, который предоставляет информацию о текущей погоде и прогнозе на несколько дней для различных городов. Он был разработан с использованием API погодного сервиса www.weatherapi.com для получения актуальной информации.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Основной функционал проекта включает в себя:
+* Текущая погода: cайт отображает текущую погоду в выбранном городе, включая температуру, влажность и скорость ветра.
+* Прогноз на несколько дней: помимо текущей погоды, сайт также предоставляет прогноз погоды на два дня вперед.
+* Множество городов: сайт позволяет выбрать любой город из базы данных и получить информацию о погоде в выбранном месте.
 
-## Learn More
+Моя цель разработки проекта состоит в том, чтобы научиться использовать фреймворк Next, а также взаимодействовать с REST API. Для проекта был использован api сайта www.weatherapi.com
 
-To learn more about Next.js, take a look at the following resources:
+Во время разработки:
+* Использовал фреймворк [Next](https://nextjs.org/)
+* Использовал типизацию [TypeScript](https://www.typescriptlang.org/)
+* Писал стили с помощью css-фреймворка - [Tailwindcss](https://tailwindcss.com/)
+* Взаимодействовал с REST API сайта www.weatherapi.com
+* Использовал библиотеку для фетчинга данных - [SWR](https://swr.vercel.app/ru)
+* Разработал поиск по городам
+* Использовал хостинг [Vercel](https://vercel.com)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+<!-- GETTING STARTED -->
+## Запуск локально
+Если вы хотите запустить проект локально, следуйте следующим инструкциям.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+1. Склонируйте репозиторий
+   ```sh
+   git clone https://github.com/shtxkrxl/movie.git
+   ```
+2. Установите NPM пакеты
+   ```sh
+   npm install
+   ```
+3. Получите бесплатный ключ на www.weatherapi.com
+4. Введите свой ключ в `.env.local`
+   ```sh
+   NEXT_PUBLIC_API_KEY=YOUR_API
+   ```
+5. Запустите сервер для разработки
+   ```sh
+   npm run dev
+   ```
+6. Откройте [http://localhost:3000](http://localhost:3000) в своём браузере чтобы увидеть результат
 
-## Deploy on Vercel
+<!-- LICENSE -->
+## Лицензия
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Распространяется под лицензией MIT License. Читайте `LICENSE.txt` для большей информации.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<!-- CONTACT -->
+## Контакты
+
+Александр Кальмаев - sanya.kalmaev@yandex.ru
+
+Ссылка на проект: [https://github.com/shtxkrxl/weather](https://github.com/shtxkrxl/weather)
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[commits-shield]: https://img.shields.io/github/commit-activity/t/shtxkrxl/weather.svg?style=for-the-badge
+[commits-url]: https://github.com/shtxkrxl/weather/graphs/commit-activity
+[issues-shield]: https://img.shields.io/github/issues/shtxkrxl/weather.svg?style=for-the-badge
+[issues-url]: https://github.com/shtxkrxl/weather/issues
+[license-shield]: https://img.shields.io/github/license/shtxkrxl/weather.svg?style=for-the-badge
+[license-url]: https://github.com/shtxkrxl/weather/blob/master/LICENSE.txt
